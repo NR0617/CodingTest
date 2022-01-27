@@ -16,3 +16,20 @@ print('%.2f'%res,"MB")
 w, h, b = map(int, input().split())
 mb = round(((w*h*b) / 8 / 1024 / 1024), 2)
 print('{:.2f} MB'.format(mb))
+# 6086
+n = int(input())
+s = 0
+for i in range(1, n + 1):
+    s += i
+    if s>=n :
+        break
+print(s)
+a=int(input())
+s=0
+c=0
+while True:
+    s=s+c
+    c=c+1
+    if s>=a:
+        break
+print(s)
